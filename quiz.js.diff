@@ -1,0 +1,149 @@
+<<<<<<<
+const starttest = document.createElement("button");
+starttest.style.height = "30px";
+starttest.style.width = "100px";
+starttest.innerHTML = "Start Test";
+
+form.appendChild(starttest);
+=======
+
+const starttest = document.createElement("button");
+starttest.style.height = "30px";
+starttest.style.width = "100px";
+starttest.innerHTML = "Start Test";
+starttest.type = "button";
+
+form.appendChild(starttest);
+```
+
+```
+<<<<<<<
+starttest.onclick = function() {
+    nameLabel.style.display = "none";
+    nameInput.style.display = "none";
+    classLabel.style.display = "none";
+    classInput.style.display = "none";
+    rollLabel.style.display = "none";
+    rollInput.style.display = "none";
+    phoneLabel.style.display = "none";
+    phoneInput.style.display = "none";
+    starttest.style.display = "none";
+
+    
+    const question1 = document.createElement("div");
+    question1.style.marginTop = "20px";
+
+    const question = document.createElement("p");
+    question.textContent = "What is the capital of France?";
+    question1.appendChild(question);
+
+     
+
+    const options = ["Berlin", "Madrid", "Paris", "Rome"];
+    options.forEach((opt) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "quiz";
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        question1.appendChild(label);
+        question1.appendChild(document.createElement("br"));
+    });
+
+   
+    app.innerHTML = "";
+    app.appendChild(question1);
+
+
+
+
+
+        const questiondiv2 = document.createElement("div");
+    question1.style.marginTop = "20px";
+
+    const question2 = document.createElement("p");
+    question.textContent = "What is the capital of France?";
+    question1.appendChild(question);
+
+     
+
+    const options2 = ["Berlin", "Madrid", "Paris", "Rome"];
+    options.forEach((opt) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "quiz";
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        question2.appendChild(label);
+        question2.appendChild(document.createElement("br"));
+    });
+
+   
+    app.innerHTML = "";
+    app.appendChild(question2);
+
+
+
+}
+=======
+starttest.onclick = function() {
+    nameLabel.style.display = "none";
+    nameInput.style.display = "none";
+    classLabel.style.display = "none";
+    classInput.style.display = "none";
+    rollLabel.style.display = "none";
+    rollInput.style.display = "none";
+    phoneLabel.style.display = "none";
+    phoneInput.style.display = "none";
+    starttest.style.display = "none";
+
+    app.innerHTML = "";
+
+    const question1 = document.createElement("div");
+    question1.style.marginTop = "20px";
+
+    const question = document.createElement("p");
+    question.textContent = "What is the capital of France?";
+    question1.appendChild(question);
+
+    const options = ["Berlin", "Madrid", "Paris", "Rome"];
+    options.forEach((opt) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "quiz1";
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        question1.appendChild(label);
+        question1.appendChild(document.createElement("br"));
+    });
+
+    app.appendChild(question1);
+
+    const questiondiv2 = document.createElement("div");
+    questiondiv2.style.marginTop = "20px";
+
+    const question2 = document.createElement("p");
+    question2.textContent = "What is 2 + 2?";
+    questiondiv2.appendChild(question2);
+
+    const options2 = ["3", "4", "5", "6"];
+    options2.forEach((opt) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "quiz2";
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        questiondiv2.appendChild(label);
+        questiondiv2.appendChild(document.createElement("br"));
+    });
+
+    app.appendChild(questiondiv2);
+}

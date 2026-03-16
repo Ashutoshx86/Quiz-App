@@ -297,9 +297,9 @@ options3.forEach((opt) => {
     const question8 = document.createElement("div");
     question8.style.marginTop = "20px";
     const q8Text = document.createElement("p");
-    q8Text.textContent = "Ashutosh's Happy Birthday?";
+    q8Text.textContent = "Who is the owner of X?";
     question8.appendChild(q8Text);
-    const options8 = ["10/10/2010", "1/1/2006", "11/11/2006", "1/11/2006"];
+    const options8 = ["Elon Musk", "Charles babage", "Andrew karl", "Jp Morgan"];
     options8.forEach((opt) => {
         const label = document.createElement("label");
         const radio = document.createElement("input");
@@ -315,9 +315,9 @@ options3.forEach((opt) => {
     const question9 = document.createElement("div");
     question9.style.marginTop = "20px";
     const q9Text = document.createElement("p");
-    q9Text.textContent = "Ashutosh's Favourite Animal?";
+    q9Text.textContent = "Which is not a programming language?";
     question9.appendChild(q9Text);
-    const options9 = ["Panther", "Leopard", "Giraffe", "Lion"];
+    const options9 = ["Panther", "Python", "C", "JavaScript"];
     options9.forEach((opt) => {
         const label = document.createElement("label");
         const radio = document.createElement("input");
